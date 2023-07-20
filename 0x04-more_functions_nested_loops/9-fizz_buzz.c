@@ -1,11 +1,10 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
  * main - fizz buzz test
- * For multiple of 3 prints Fizz
- * For multiples of 5 prints Buzz
- * For both, prints FizzBuzz
- * Return: 0 (Success)
+ *
+ * Return: 0
  */
 
 int main(void)
@@ -20,7 +19,14 @@ int main(void)
 		}
 		else if (n % 5 == 0 && n % 3 != 0)
 		{
-			printf("Buzz ");
+			if (n == 100)
+			{
+				printf("Buzz");
+			}
+			else
+			{
+				printf("Buzz ");
+			}
 		}
 		else if (n % 5 == 0 && n % 3 == 0)
 		{

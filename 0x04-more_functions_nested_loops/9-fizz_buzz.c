@@ -28,6 +28,10 @@ int main(void)
 			printf("FizzBuzz");
 			printf(" ");
 		}
+		else if (n == 1)
+		{
+			printf("%d \n");
+		}
 		else
 		{
 			printf("%d", n);

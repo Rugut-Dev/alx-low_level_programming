@@ -1,5 +1,5 @@
 #ifndef MAIN_H
-#define MAIN_H
+11;rgb:0000/0000/0000#define MAIN_H
 
 int _putchar(char c);
 int _isupper(int c);
@@ -11,6 +11,5 @@ void more_numbers(void);
 void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
-int main(void);
 
 #endif

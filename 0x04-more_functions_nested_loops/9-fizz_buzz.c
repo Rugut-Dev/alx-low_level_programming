@@ -5,7 +5,7 @@
  * For multiple of 3 prints Fizz
  * For multiples of 5 prints Buzz
  * For both, prints FizzBuzz
- * Return: void
+ * Return: 0 (Success)
  */
 
 int main(void)
@@ -36,5 +36,5 @@ int main(void)
 		}
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }

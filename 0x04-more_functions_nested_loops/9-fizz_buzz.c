@@ -2,7 +2,9 @@
 
 /**
  * main - fizz buzz test
- *
+ * For multiple of 3 prints Fizz
+ * For multiples of 5 prints Buzz
+ * For both, prints FizzBuzz
  * Return: 0
  */
 

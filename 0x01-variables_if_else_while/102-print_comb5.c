@@ -11,27 +11,24 @@ int main(void)
 
 	for (a = 0; a <= 99; a++)
 	{
-		for (b = a; b <= 99; b++)
+		for (b = 0; b <= 99; b++)
 		{
-			int a_1 = a / 10;
-			int a_2 = a % 10;
-			int b_1 = b / 10;
-			int b_2 = b % 10;
-
-			putchar('0' + a_1);
-			putchar('0' + a_2);
-			putchar(' ');
-			putchar('0' + b_1);
-			putchar('0' + b_2);
-
-			if (!(a == 99 && b == 99))
+			if (a < b)
 			{
-				putchar(',');
+				putchar((a / 10) + 48);
+				putchar((a % 10) + 48);
 				putchar(' ');
+				putchar((b / 10) + 48);
+				putchar((b % 10) + 48);
+
+				if (a != 98 || a != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-
 	putchar('\n');
 
 	return (0);

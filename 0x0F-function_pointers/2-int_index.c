@@ -11,28 +11,21 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i;
+	int i = 0;
 
-	if (array == NULL || size <= 0)
+	if (size > 0)
 	{
-		return (-1);
-	}
-	for (i = 0; i < size; i++)
-	{
-		if (cmp(array[i]) != 0)
+		if (array != NULL && cmp != NULL)
 		{
-			return (i);
+			while (i < size)
+			{
+				if (cmp(array[i]))
+					return (i);
+
+				i++;
+			}
 		}
 	}
+
 	return (-1);
-}
-/**
- * compare_even - checks even
- * @num: num being checked
- *
- * Return: int
- */
-int compare_even(int num)
-{
-	return (num % 2 == 0);
 }

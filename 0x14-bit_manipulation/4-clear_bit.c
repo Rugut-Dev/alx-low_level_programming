@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * clar_bit - sets val of bit to 0 at a given index
+ * clear_bit - sets val of bit to 0 at a given index
  * @n: num
  * @index: index
  *

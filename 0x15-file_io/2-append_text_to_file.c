@@ -9,7 +9,8 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	ssize_t fd, text_wr;
+	int fd;
+	ssize_t text_wr;
 
 	if (filename == NULL)
 		return (-1);
@@ -29,6 +30,7 @@ int append_text_to_file(const char *filename, char *text_content)
 			return (-1);
 		}
 	}
+
 	close(fd);
-	return (-1);
+	return (1);
 }

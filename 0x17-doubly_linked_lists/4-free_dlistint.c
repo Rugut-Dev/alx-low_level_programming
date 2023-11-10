@@ -7,16 +7,12 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *temp, *next;
-
-	temp = head;
+	dlistint_t *temp;
 
 	do {
-		next = temp->next;
+		temp = head;
+		head = head->next;
 		free(temp);
-		temp = next;
+	} while (head != NULL);
 
-	} while (temp != NULL);
-
-	head = NULL;
 }

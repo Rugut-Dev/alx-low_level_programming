@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set = adds element to the hash table
+ * hash_table_set - adds element to the hash table
  * @ht: hash table
  * @key:key
  * @value: value
